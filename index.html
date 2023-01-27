@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pond of Luck</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <h2>Поле чудес: веб-игра</h2>
+    <div id="game">
+        <div id="drum">
+            <canvas id="canvas" width="500" height="500"></canvas>
+
+        </div>
+
+        <div id="desk" class="text-center">
+            <div class="first-column">
+                <span class="desk-line"><h3>Тема:</h3></span>
+                <span id="theme" class="desk-line"><h3>Птицы</h3></span>
+                <span  class="desk-line"><h3>Скрытое слово:</h3></span>
+                <span id="word" class="desk-line"><h3>Placeholder</h3></span>
+                <span id="game-stage" class="desk-line"><h3>Четвертьфинал</h3></span>
+                <button id="spin">Rotate</button>
+            </div>
+            <div class="second-column">
+                <div id="players">
+                    <div id="first-player" class="player">
+                        <span class="bot-name">Игрок 1</span><br>
+                        <span>Догадка:  </span>
+                        <span id="first_bot">Ждет</span>
+                        <br>
+                        <span>Очки:</span>
+                        <span id="first_points">0</span>
+                    </div>
+                    <div id="second-player" class="player">
+                        <span">Игрок 2</span><br>
+                        <span>Догадка:  </span>
+                        <span id="second_bot" class="bot-letter">Ждет</span>
+                        <br>
+                        <span>Очки:</span>
+                        <span id="second_points">0</span>
+                    </div>
+                    <div id="human-player" class="player">
+                        <span>Очки:</span>
+                        <span id="player_points">0</span>
+                        <br>
+                        <input type="text" name="word" id="letter-input">
+                        <br>
+                        <button id="letterCheck">Попытка</button>
+                        <button id="bot_move">Отдать ход</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Pole Chudes &copy;2023
+    </footer>
+</div>
+
+
+
+<script src="js/app3.js"></script>
+<!--<script src="js/drum.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+  background: #444;
+  margin: auto;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 70vw;
+  margin: auto;
+
+  h2 {
+    margin: 2rem;
+  }
+
+  #game {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    max-height: 50vh;
+
+    #drum {
+      display: flex;
+
+      canvas {
+        background: white;
+        border-radius: 3150px;
+      }
+
+      img {
+        height: 400px;
+        width: 400px;
+        border-radius: 70%;
+      }
+    }
+
+    #desk {
+      margin-top: 3rem;
+      .first-column {
+        width: 30rem;
+        border-radius: 10px;
+        background: #6c6666;
+        border: #878787 solid 3px;
+        max-height: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        h1,h2,h3 {
+          align-self: center;
+        }
+        button {
+          height: 50%;
+          width: 50%;
+          //align-self: center;
+          margin: auto;
+        }
+      }
+
+      .second-column {
+        width: 30rem;
+        #players{
+          max-width: 100%;
+          max-height: 100%;
+          //background: #6c6666;
+
+          .player{
+            border: #878787 solid 3px;
+            border-radius: 10px;
+            //height: 7rem;
+            width: 50%;
+            align-self: center;
+            margin: auto;
+            margin-top: 1rem;
+          }
+
+          #human-player {
+            padding: 0.5rem;
+            input {
+              width: 5rem;
+              margin: 0.5rem;
+            }
+            button {
+              height: 2rem;
+              width: 5rem;
+              background: darkgray;
+              box-shadow: none;
+              border-radius: 7px;
+              margin: auto;
+              align-self: center;
+            }
+            #bot_move {
+
+            }
+          }
+
+          .button {
+            width: 6rem;
+          }
+
+          #bot_move {
+            display: none;
+          }
+        }
+
+      }
+
+
+    }
+  }
+}
